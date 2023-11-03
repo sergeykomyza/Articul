@@ -57,8 +57,8 @@ const animateGSAP = () => {
         const tl3 = gsap.timeline({
             scrollTrigger: {
                 trigger: '.footer',
-                start: 'top center',
-                end: `+=200`,
+                start: '1rem 80%',
+                end: `+=10`,
                 duration: 3,
                 scrub: 1.5,
                 toggleActions: "play none resume reverse",
