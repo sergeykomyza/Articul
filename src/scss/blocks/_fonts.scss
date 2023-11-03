@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'DrukWideCyr-Medium';
+	src: url('../fonts/drukwidecyr-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/drukwidecyr-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/drukwidecyr-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/drukwidecyr-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/drukwidecyr-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/drukwidecyr-medium.svg#drukwidecyr-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Articul';
+	font-style: normal;
+	font-weight: 100;
+	src: url(../fonts/Articul-Thin.3edf71fd.woff2) format("woff2"),
+        url(../fonts/Articul-Thin.5808e4c3.woff) format("woff")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Articul';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/Articul-Light.8efde969.woff2) format("woff2"),
+        url(../fonts/Articul-Light.1816ebfc.woff) format("woff")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Articul';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Articul.542bbe19.woff2) format("woff2"),
+        url(../fonts/Articul.171cfb87.woff) format("woff")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Articul';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/Articul-Medium.1e29ac4c.woff2) format("woff2"),
+        url(../fonts/Articul-Medium.bfa7b912.woff) format("woff")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Articul';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/Articul-Bold.22d8ed44.woff2) format("woff2"),
+        url(../fonts/Articul-Bold.86c1f04f.woff) format("woff")
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Articul';
+	font-style: normal;
+	font-weight: 900;
+	src: url(../fonts/Articul-Black.6f7a2a95.woff2) format("woff2"),
+        url(../fonts/Articul-Black.26e266cc.woff) format("woff")
+}

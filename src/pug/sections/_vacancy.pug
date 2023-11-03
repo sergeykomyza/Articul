@@ -1,0 +1,39 @@
+.vacancy
+	each item in ['Middle web designer','Системный  аналитик','IT sales manager','Head of marketing & PR']
+		.vacancy__item 
+			.vacancy__head 
+				h6.vacancy__name= item
+				.vacancy__icon 
+					span.vacancy__iconline.vacancy__iconline--gor
+					span.vacancy__iconline.vacancy__iconline--ver
+			.vacancy__body 
+				.vacancy-stage
+					.vacancy-stage__num >6
+					span.vacancy-stage__text лет опыта
+				.vacancy__info
+					p.vacancy__text Самостоятельный дизайнер с отличной насмотренностью, который способен без помощи арт-директора решать #[br] как базовые дизайн-задачи так и сложные (дизайн лендингов, подач, презентаций и тд.)
+
+					.vacancy-parameters
+						.vacancy-parameters__buttons 
+							each item in ['требования','обязанности','стек']
+								button.vacancy-parameters__button.js-tabBtn= item
+
+						.vacancy-parameters__body 
+							.vacancy-parameters__inner
+								each item in ['Опыт работы в сфере графики и веба: 6–9 лет и выше','Умение при необходимости самостоятельно взаимодействовать в коммуникации с подрядчиком','Понимание проектирования взаимодействия и создания информационной архитектуры проекта','Сильное портфолио с кейсами в сфере корпоративного/информационного веба','Умение декомпозировать задачи, организовывать и синхронизировать командную работу с другими дизайнерами','Умение быстро подобрать нужные референсы из топовых работ в сфере веба и использовать их в работе','Ответственность, желание развиваться, обучаемость, перфекционизм, любовь к деталям и минимализму']
+									.vacancy-parameters__item
+										p= item 
+							include ./../layouts/_replyButton.pug 
+						.vacancy-parameters__body 
+							.vacancy-parameters__inner
+								each item in ['Умение при необходимости самостоятельно взаимодействовать в коммуникации с подрядчиком','Опыт работы в сфере графики и веба: 6–9 лет и выше','Понимание проектирования взаимодействия и создания информационной архитектуры проекта','Сильное портфолио с кейсами в сфере корпоративного/информационного веба']
+									.vacancy-parameters__item
+										p= item 
+							include ./../layouts/_replyButton.pug 
+						.vacancy-parameters__body 
+							.vacancy-parameters__inner
+								each item in ['Умение при необходимости самостоятельно взаимодействовать в коммуникации с подрядчиком','Понимание проектирования взаимодействия и создания информационной архитектуры проекта','Сильное портфолио с кейсами в сфере корпоративного/информационного веба']
+									.vacancy-parameters__item
+										p= item 
+							include ./../layouts/_replyButton.pug 
+					
