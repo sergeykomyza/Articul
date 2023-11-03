@@ -52,10 +52,7 @@ const animateGSAP = () => {
         opacity: 0,
         delay: 0.7
     })
-    
-}
 
-const lastAnimate = () => {
     setTimeout(function (){
         const tl3 = gsap.timeline({
             scrollTrigger: {
@@ -63,18 +60,21 @@ const lastAnimate = () => {
                 start: 'top center',
                 end: `+=200`,
                 duration: 3,
+                scrub: 1.5,
+                toggleActions: "play none resume reverse",
                 markers: false,
             }
         })
-        tl3.from(".footer-labels", {
-            transform: 'translate(-29rem, 0.5rem)',
+        tl3.from(".footer-labels__item", {
+            transform: 'none',
             opacity: 0,
+        }).from(".footer-labels", {
+            transform: 'translate(-29rem, 0.5rem)',
+            duration: 0.5,
         }).from(".footer__info", {
             opacity: 0,
         })
     }, 500);
-    
-
     
 }
 
@@ -120,8 +120,11 @@ const accordeons = (box, item, header, content, openedClass, closedClass) => {
     });
     accItem[0].className = openedClass
     accItem[0].querySelector(content).style.maxHeight = accItem[0].querySelector(content).scrollHeight + 'px'
+   
     function toggle(e) {
-        
+        setTimeout(function () {
+            ScrollTrigger.refresh();
+        }, 500);
         let target = e.target
         e.preventDefault()
         const thisClass = this.className
